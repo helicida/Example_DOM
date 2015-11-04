@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ROWSET>
+    <ROW>
+        <CODI_CARRER>000102</CODI_CARRER>
+        <CODI_CARRER_INE></CODI_CARRER_INE>
+        <SIGLA>C</SIGLA>
+        <NOM_OFICIAL>Carrer dels Llebrencs</NOM_OFICIAL>
+        <NOM_CURT>Llebrencs</NOM_CURT>
+        <NRE_MIN></NRE_MIN>
+        <NRE_MAX></NRE_MAX>
+    </ROW>
+    <ROW>
+        <CODI_CARRER>000180</CODI_CARRER>
+        <CODI_CARRER_INE></CODI_CARRER_INE>
+        <SIGLA>C</SIGLA>
+        <NOM_OFICIAL>Carrer A Zona Franca</NOM_OFICIAL>
+        <NOM_CURT>A</NOM_CURT>
+        <NRE_MIN></NRE_MIN>
+        <NRE_MAX></NRE_MAX>
+    </ROW>
+</ROWSET>
