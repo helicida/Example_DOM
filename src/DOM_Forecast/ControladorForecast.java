@@ -28,6 +28,7 @@ public class ControladorForecast {
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, TransformerException {
 
+        /*
         Scanner teclat = new Scanner(System.in);    //Fem scanner
 
         System.out.println("Introdueix la ruta del arixu d'on vols llegir");
@@ -36,7 +37,7 @@ public class ControladorForecast {
         System.out.println("Introdueix la ruta del arxiu de sortida");
             teclat.next();
 
-        teclat.close(); //Tanquem el scanner
+        teclat.close(); //Tanquem el scanner */
 
         File outputFile = new File(rutaOutput); //Arxiu on escirurem
         File inputFile = new File(rutaInput);   //Ruta donde está localizado el archivo XML
@@ -60,7 +61,7 @@ public class ControladorForecast {
             double ventKPH = ventMPS * 3.6;
             System.out.println("----------------------------------------------------------------");
             System.out.println("Fecha: " + time.getAttributes().getNamedItem("from").getNodeValue() + " a " + time.getAttributes().getNamedItem("to").getNodeValue());
-            System.out.println("Temperatura: " + time.getElementsByTagName("temperature").item(0).getAttributes().getNamedItem("value").getNodeValue() + "º");
+            System.out.println("Temperatura: " + time.getElementsByTagName("temperature").item(0).getAttributes().getNamedItem("value").getNodeValue() + "º" + " Max: " + time.getElementsByTagName("temperature").item(0).getAttributes().getNamedItem("max").getNodeValue() + "º" + " Min: " + time.getElementsByTagName("temperature").item(0).getAttributes().getNamedItem("min").getNodeValue() + "º");
             System.out.println("Humedad: " + time.getElementsByTagName("humidity").item(0).getAttributes().getNamedItem("value").getNodeValue() + "%");
             System.out.println("Reporte: " + toSpanish(time.getElementsByTagName("clouds").item(0).getAttributes().getNamedItem("value").getNodeValue()));
             System.out.println("Velocidad del viento: " + ventKPH + " kmh | " + ventMPS + " mps");
