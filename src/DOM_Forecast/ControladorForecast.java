@@ -16,20 +16,27 @@ import javax.xml.transform.stream.StreamResult;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Created by sergi on 3/11/15.
  */
 public class ControladorForecast {
 
-    public static String rutaInput = "/home/sergi/IdeaProjects/Examples_DOM/src/DOM_Forecast/forecast.xml";
-    public static String rutaOutput = "/home/sergi/IdeaProjects/Examples_DOM/src/DOM_Forecast/forecast2.xml";
+    public static String rutaInput = "/home/sergi/IdeaProjects/Example_DOM/src/DOM_Forecast/forecast.xml";
+    public static String rutaOutput = "/home/sergi/IdeaProjects/Example_DOM/src/DOM_Forecast/forecast2.xml";
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, TransformerException {
 
+        Scanner teclat = new Scanner(System.in);    //Fem scanner
+
         System.out.println("Introdueix la ruta del arixu d'on vols llegir");
+            teclat.next();
 
         System.out.println("Introdueix la ruta del arxiu de sortida");
+            teclat.next();
+
+        teclat.close(); //Tanquem el scanner
 
         File outputFile = new File(rutaOutput); //Arxiu on escirurem
         File inputFile = new File(rutaInput);   //Ruta donde está localizado el archivo XML
